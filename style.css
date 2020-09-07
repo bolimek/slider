@@ -6,6 +6,11 @@
   max-width: 1366px;
 }
 
+.swiper-container-first .swiper-slide {
+  height: auto;
+  max-height: 600px;
+}
+
 .swiper-container-first img {
   width: 100%;
   height: 100%;
@@ -27,4 +32,24 @@
   .swiper-container-first .swiper-button {
     display: flex;
   }
+}
+
+
+.swiper-container-first .swiper-button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.swiper-container-first .swiper-button::after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.swiper-container-first .swiper-button-disabled {
+  display: none;
+}
+
+.swiper-container-first .swiper-scrollbar {
+  background-color: rgba(255, 255, 255, .3)
 }
