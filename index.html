@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider with Swiper Library</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   </head>
   <body>
     <div class="swiper-container swiper-container-first">
@@ -17,11 +17,91 @@
         <div class="swiper-slide"><img src="images/road-1072823_640.jpg"></div>
         <div class="swiper-slide"><img src="images/winter-landscape-2571788_640.jpg"></div>
       </div>
-      <div class="swiper-button swiper-button-prev"></div>
-      <div class="swiper-button swiper-button-next"></div>
-      <div class="swiper-scrollbar"></div>
+      <div class="swiper-button swiper-button-prev" id="swiper-button-prev1"></div>
+      <div class="swiper-button swiper-button-next" id="swiper-button-next1"></div>
+      <div class="swiper-scrollbar" id="swiper-scrollbar1"></div>
     </div>
-    <script src="index.mjs" type="module">
-    </body>
-    </script>
+
+    <div class="swiper-container swiper-container-second">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/aurora-1197753_640.jpg"></div>
+        <div class="swiper-slide"><img src="images/fantasy-3077928_640.jpg"></div>
+        <div class="swiper-slide"><img src="images/green-1072828_640.jpg"></div>
+        <div class="swiper-slide"><img src="images/mountain-landscape-2031539_640.jpg"></div>
+        <div class="swiper-slide"><img src="images/road-1072823_640.jpg"></div>
+        <div class="swiper-slide"><img src="images/winter-landscape-2571788_640.jpg"></div>
+      </div>
+      <div class="swiper-pagination" id="swiper-pagination2"></div>
+    </div>
+
+    <div class="swiper-container swiper-container-third">
+      <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="course">
+            <div class="course-author">
+              <img src="images/fantasy-3077928_640.jpg">
+            </div>
+            <div class="course-info">
+              <h2 class="course-title">Programowanie w X</h2>
+              <p class="curse-content">X to najpopularniejszy jezyk...</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="course">
+            <div class="course-author">
+              <img src="images/green-1072828_640.jpg">
+            </div>
+            <div class="course-info">
+              <h2 class="course-title">Programowanie w Y</h2>
+              <p class="curse-content">Y to tez najpopularniejszy jezyk...</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="course">
+            <div class="course-author">
+              <img src="images/mountain-landscape-2031539_640.jpg">
+            </div>
+            <div class="course-info">
+              <h2 class="course-title">Programowanie w Z</h2>
+              <p class="curse-content">Z to z kolei najpopularniejszy jezyk...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button swiper-button-prev" id="swiper-button-prev3"></div>
+      <div class="swiper-button swiper-button-next" id="swiper-button-next3"></div>
+    </div>
+
+    <div class="swiper-container swiper-container-fourth">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="course">
+            <div class="course-author">
+              <img src="images/winter-landscape-2571788_640.jpg">
+            </div>
+            <div class="course-info">
+              <h2 class="course-title">Programowanie w X</h2>
+              <p class="curse-content">X to najpopularniejszy jezyk...</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="course">
+            <div class="course-author">
+              <img src="images/aurora-1197753_640.jpg">
+            </div>
+            <div class="course-info">
+              <h2 class="course-title">Programowanie w Y</h2>
+              <p class="curse-content">Y to tez najpopularniejszy jezyk...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination" id="swiper-pagination4"></div>
+    </div>
+    <script src="app.mjs" type="module"></script>
+  </body>
 </html>
